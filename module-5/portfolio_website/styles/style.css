@@ -12,10 +12,13 @@
 .color-orange {
   color: #fd6e0a;
 }
+.text-center{
+  text-align: center;
+}
 .btn {
   border: none;
   border-radius: 5px;
-  padding: 18px 35px;
+  padding: 18px;
   background-color: #fd6e0a;
   color: white;
   font-weight: bold;
@@ -43,7 +46,7 @@ header {
   background: url("../images/developer.png"), url("../images/header_bg.png"),
     #fff8f3;
   background-repeat: no-repeat;
-  background-position: left top, right bottom;
+  background-position: 23px 38px, right bottom;
   padding-top: 50px;
 }
 
@@ -154,5 +157,86 @@ nav .menu a {
   font-size: 16px;
   line-height: 28px;
   color: #757575;
+}
+
+
+#resume{
+  padding-top: 130px;
+}
+
+#resume .resume-container{
+  width: 72%;
+  max-width: 1140px;
+  margin: 110px auto 50px;
+  display: flex;
+  gap: 24px;
+}
+.resume-container .section-title{
+  font-size: 30px;
+  color: #474747;
+  /* margin-bottom: 30px; */
+}
+.resume-container .resume-card{
+  min-width: 511px;
+  /* margin-top: 30px; */
+  /* margin-bottom: 30px; */
+  margin-right: 47px;
+}
+.resume-container hr{
+  margin: 30px 0;
+}
+.resume-card .card-title{
+  font-size: 25px;
+  color: #474747;
+  margin-bottom: 10px;
+}
+.resume-card .card-info{
+  font-weight: 600;
+  font-size: 20px;
+  color: #757575;
+  margin-bottom: 20px;
+}
+.resume-card p{
+  font-size: 16px;
+  line-height: 28px;
+  color: #757575;
+}
+footer{
+  margin-top: 113px;
+  background-color: #FFF8F3;
+}
+footer .footer-container{
+  max-width: 1140px;
+  width: 71%;
+  display: flex;
+  gap: 116px;
+  padding: 130px 0;
+  margin: 0 auto;
+}
+.footer-container h2{
+  font-size: 35px;
+  color: #181818;
+  margin-bottom: 20px;
+}
+.footer-container .social{
+  max-width: 562px;
+}
+.footer-container .social p{
+  font-size: 16px;
+  line-height: 28px;
+  color: #474747;
+  margin-bottom: 30px;
+}
+.footer-container .icons a{
+  margin-right: 24px;
+}
+footer .form input[type="text"], footer .form input[type="email"],footer .form textarea{
+  padding: 18px 30px;
+  width: 461px;
+  margin-bottom: 24px;
+  border: none;
+  color: #757575;
+  line-height: 28px;
+
 }
 /* *{outline: 1px solid green;} */
