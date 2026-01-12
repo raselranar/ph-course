@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 4</title>
+    <style>
+      .posts-container {
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* gap: 10px; */
+      }
+      .post {
+        display: flex;
+        gap: 10px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.315);
+        border-radius: 5px;
+        align-items: top;
+        margin-bottom: 10px;
+        text-align: justify;
+      }
+      .post-info {
+      }
+      .btn {
+        background-color: #0a6df8ce;
+        padding: 5px 10px;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+      }
+      .post img {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 576px) {
+        .post {
+          display: block;
+        }
+        .post-info {
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="posts-container">
+      <div class="post">
+        <img src="/images/boat with sunset.png" alt="" />
+        <div class="post-info">
+          <h3>Post Title</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, esse
+            quia? Repudiandae debitis repellendus possimus in minus. Pariatur
+            impedit magni, debitis aperiam soluta distinctio rerum expedita
+            doloremque. Animi, ipsum quis.
+          </p>
+          <button class="btn">Read More</button>
+        </div>
+      </div>
+      <div class="post">
+        <img src="/images/boat with sunset.png" alt="" />
+        <div class="post-info">
+          <h3>Post Title</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, esse
+            quia? Repudiandae debitis repellendus possimus in minus. Pariatur
+            impedit magni, debitis aperiam soluta distinctio rerum expedita
+            doloremque. Animi, ipsum quis.
+          </p>
+          <button class="btn">Read More</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

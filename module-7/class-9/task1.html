@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1</title>
+    <style>
+      .flex-container {
+        display: flex;
+        height: 80vh;
+        gap: 10px;
+      }
+      .left {
+        background-color: rgb(153, 152, 152);
+        width: 35%;
+        border-radius: 10px;
+      }
+      .right {
+        width: 70%;
+        border-radius: 10px;
+        background-color: #6d4646;
+      }
+      .left,
+      .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @media screen and (max-width: 576px) {
+        .flex-container {
+          flex-direction: column;
+          .left {
+            height: 35%;
+            width: 100%;
+          }
+          .right {
+            height: 70%;
+            width: 100%;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Task 1: Design a responsive flex layout</h1>
+    <div class="flex-container">
+      <div class="left">Left</div>
+      <div class="right">Right</div>
+    </div>
+  </body>
+</html>
