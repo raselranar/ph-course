@@ -167,6 +167,29 @@ header .nav-link {
 .sponsors-companies img {
   filter: grayscale(100%);
 }
+/* feature section styles */
+.features {
+  gap: 100px;
+}
+
+.feature-section-title {
+  border-left: 5px solid #ff900e;
+  padding-left: 20px;
+  margin-bottom: 24px;
+}
+.feature-cards .card {
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.151);
+  padding: 30px;
+  margin-top: 20px;
+}
+.feature-cards .card-title {
+  font-size: 1.25rem;
+  color: #131313;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
 /* responsive styles */
 @media screen and (max-width: 576px) {
   .navbar,
