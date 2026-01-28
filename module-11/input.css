@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@theme {
+  /* font families */
+  --font-eb-garamond: "EB Garamond", serif;
+  --font-poppins: "Poppins", sans-serif;
+  /* colors */
+  --color-dark-2: rgb(65, 64, 64);
+  --color-dark-3: rgb(112, 112, 112);
+  --color-dark-4: rgb(160, 160, 160);
+  --color-dark-6: #e7e7e7;
+}

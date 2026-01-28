@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+
+    <!-- add font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- internal css -->
+    <!-- <style>
+      .font-eb-garamond {
+        font-family: "EB Garamond", serif;
+        font-optical-sizing: auto;
+      }
+    </style> -->
+
+    <!-- tailwind css -->
+    <!-- <style type="text/tailwindcss">
+      @theme {
+        /* font families */
+        --font-eb-garamond: "EB Garamond", serif;
+        --font-poppins: "Poppins", sans-serif;
+        /* colors */
+        --color-dark-2: rgb(65, 64, 64);
+        --color-dark-3: rgb(112, 112, 112);
+        --color-dark-4: rgb(160, 160, 160);
+        --color-dark-6: #e7e7e7;
+      }
+    </style> -->
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="font-eb-garamond">
+    <header>
+      <section class="mx-auto mt-13 w-5/6 max-w-[1170px]">
+        <!-- nav bar -->
+        <nav class="flex justify-between items-center">
+          <img src="./images/logo2.png" alt="logo" />
+          <ul class="flex gap-8">
+            <li>
+              <a
+                href="#"
+                class="text-[#707070] rounded-lg px-4 py-2 block hover:bg-[#0d9f9a] hover:text-white"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#707070] rounded-lg px-4 py-2 block hover:bg-[#0d9f9a] hover:text-white"
+                href="#"
+                class="text-[#707070]"
+                >Services
+                <i class="fa-solid fa-angle-right ml-1"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-[#707070] rounded-lg px-4 py-2 block hover:bg-[#0d9f9a] hover:text-white"
+                href="#"
+                class="text-[#707070]"
+                >Cases
+                <i class="fa-solid fa-angle-right ml-1"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-[#707070] rounded-lg px-4 py-2 block hover:bg-[#0d9f9a] hover:text-white"
+                href="#"
+                class="text-[#707070]"
+                >Blog
+                <i class="fa-solid fa-angle-right ml-1"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-[#707070] rounded-lg px-4 py-2 block hover:bg-[#0d9f9a] hover:text-white"
+                href="#"
+                class="text-[#707070]"
+                >Contact Us
+                <i class="fa-solid fa-angle-right ml-1"></i>
+              </a>
+            </li>
+          </ul>
+          <button
+            class="rounded-lg bg-[#B68C5A] text-white font-semibold text-lg/7 px-7 py-5"
+          >
+            Free Consultation
+          </button>
+        </nav>
+        <!-- banner section -->
+        <div class="bg-[url(./images/banner.png)] bg-cover p-25 my-12.5 w-full">
+          <!-- banner contents -->
+          <div class="text-center max-w-167 m-auto mb-6">
+            <h2 class="text-white font-extrabold text-7xl">
+              We Provide Effective Legal Solutions
+            </h2>
+            <p class="font-poppins mt-6 mb-8 text-dark-6">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <!-- banner buttons -->
+            <div class="flex gap-6">
+              <input
+                type="text"
+                name=""
+                id=""
+                value="Search your services"
+                class="font-poppins text-base/relaxed text-dark-4 px-5 py-5 rounded-lg bg-white grow"
+              />
+              <button
+                class="font-poppins text-5 rounded-lg bg-[#B68C5A] text-white font-semibold text-lg/7 py-4.5 px-10"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main class="flex justify-center text-center mt-30">
+      <!-- practice area section -->
+      <section>
+        <div class="max-w-178.5 text-center m-auto">
+          <h2 class="text-dark-2 font-extrabold text-4xl/13 mb-6">
+            The Legal Practice Area
+          </h2>
+          <p class="font-poppins text-dark-3 text-base leading-relaxed">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour.
+          </p>
+        </div>
+        <!-- Practice area cards container -->
+        <div class="grid grid-cols-3 grid-rows-2 mt-15">
+          <!-- card start -->
+          <div
+            class="flex flex-col gap-8 items-center max-w-100 max-h-125 border border-[#e7e7e7] px-17.5 pb-17.5 pt-13 hover:bg-linear-to-b from-[#f3f3f3] to-transparent"
+          >
+            <img src="./images/business.png" alt="" />
+            <div>
+              <h3 class="text-dark-2 text-3xl/10.5 font-extrabold">
+                Business Law
+              </h3>
+              <p class="font-poppins pt-6 text-dark-3 leading-[26px]">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
+              </p>
+            </div>
+            <img src="./images/Frame.png" alt="" />
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div
+            class="flex flex-col gap-8 items-center max-w-100 max-h-125 border border-[#e7e7e7] px-17.5 pb-17.5 pt-13 hover:bg-linear-to-b from-[#f3f3f3] to-transparent"
+          >
+            <img src="./images/business.png" alt="" />
+            <div>
+              <h3 class="text-dark-2 text-3xl/10.5 font-extrabold">
+                Business Law
+              </h3>
+              <p class="font-poppins pt-6 text-dark-3 leading-[26px]">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
+              </p>
+            </div>
+            <img src="./images/Frame.png" alt="" />
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div
+            class="flex flex-col gap-8 items-center max-w-100 max-h-125 border border-[#e7e7e7] px-17.5 pb-17.5 pt-13 hover:bg-linear-to-b from-[#f3f3f3] to-transparent"
+          >
+            <img src="./images/business.png" alt="" />
+            <div>
+              <h3 class="text-dark-2 text-3xl/10.5 font-extrabold">
+                Business Law
+              </h3>
+              <p class="font-poppins pt-6 text-dark-3 leading-[26px]">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
+              </p>
+            </div>
+            <img src="./images/Frame.png" alt="" />
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div
+            class="flex flex-col gap-8 items-center max-w-100 max-h-125 border border-[#e7e7e7] px-17.5 pb-17.5 pt-13 hover:bg-linear-to-b from-[#f3f3f3] to-transparent"
+          >
+            <img src="./images/business.png" alt="" />
+            <div>
+              <h3 class="text-dark-2 text-3xl/10.5 font-extrabold">
+                Business Law
+              </h3>
+              <p class="font-poppins pt-6 text-dark-3 leading-[26px]">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
+              </p>
+            </div>
+            <img src="./images/Frame.png" alt="" />
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div
+            class="flex flex-col gap-8 items-center max-w-100 max-h-125 border border-[#e7e7e7] px-17.5 pb-17.5 pt-13 hover:bg-linear-to-b from-[#f3f3f3] to-transparent"
+          >
+            <img src="./images/business.png" alt="" />
+            <div>
+              <h3 class="text-dark-2 text-3xl/10.5 font-extrabold">
+                Business Law
+              </h3>
+              <p class="font-poppins pt-6 text-dark-3 leading-[26px]">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
+              </p>
+            </div>
+            <img src="./images/Frame.png" alt="" />
+          </div>
+          <!-- card end -->
+          <!-- card start -->
+          <div
+            class="flex flex-col gap-8 items-center max-w-100 max-h-125 border border-[#e7e7e7] px-17.5 pb-17.5 pt-13 hover:bg-linear-to-b from-[#f3f3f3] to-transparent"
+          >
+            <img src="./images/business.png" alt="" />
+            <div>
+              <h3 class="text-dark-2 text-3xl/10.5 font-extrabold">
+                Business Law
+              </h3>
+              <p class="font-poppins pt-6 text-dark-3 leading-[26px]">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
+              </p>
+            </div>
+            <img src="./images/Frame.png" alt="" />
+          </div>
+          <!-- card end -->
+        </div>
+      </section>
+    </main>
+  </body>
+  <!-- <script>
+    const width = window.innerWidth;
+    const targetZoom = (width / 1440) * 100;
+    document.body.style.zoom = Math.round(targetZoom) + "%";
+  </script> -->
+</html>
