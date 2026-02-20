@@ -51,36 +51,48 @@
         </p>
       </div>
       <!-- buttons -->
-      <div class="grid grid-cols-3 grid-rows-2 gap-4 pt-6">
+      <div id="main-buttons" class="grid grid-cols-3 grid-rows-2 gap-4 pt-6">
         <button
           onclick="showOnly('add-money')"
-          class="btn h-full flex-col py-5"
+          class="btn h-full flex-col py-5 text-black/60"
         >
           <img src="./assets/opt-1.png" alt="add money" />
-          <p class="text-black/60">Add Money</p>
+          <p class="">Add Money</p>
         </button>
-        <button onclick="showOnly('cashout')" class="btn h-full flex-col py-5">
+        <button
+          onclick="showOnly('cashout')"
+          class="btn h-full flex-col py-5 text-black/60"
+        >
           <img src="./assets/opt-2.png" alt="Cashout" />
-          <p class="text-black/60">Cashout</p>
+          <p class="">Cashout</p>
         </button>
         <button
           onclick="showOnly('transfer-money')"
-          class="btn h-full flex-col py-5"
+          class="btn h-full flex-col py-5 text-black/60"
         >
           <img src="./assets/opt-3.png" alt="Transfer Money" />
-          <p class="text-black/60">Transfer Money</p>
+          <p class="">Transfer Money</p>
         </button>
-        <button class="btn h-full flex-col py-5">
+        <button
+          onclick="showOnly('get-bonus')"
+          class="btn h-full flex-col py-5 text-black/60"
+        >
           <img src="./assets/opt-4.png" alt="Get Bonus" />
-          <p class="text-black/60">Get Bonus</p>
+          <p class="">Get Bonus</p>
         </button>
-        <button class="btn h-full flex-col py-5">
+        <button
+          onclick="showOnly('pay-bill')"
+          class="btn h-full flex-col py-5 text-black/60"
+        >
           <img src="./assets/opt-5.png" alt="Pay Bill" />
-          <p class="text-black/60">Pay Bill</p>
+          <p class="">Pay Bill</p>
         </button>
-        <button class="btn h-full flex-col py-5">
+        <button
+          onclick="showOnly('transactions')"
+          class="btn h-full flex-col py-5 text-black/60"
+        >
           <img src="./assets/opt-1.png" alt="Transactions" />
-          <p class="text-black/60">Transactions</p>
+          <p class="">Transactions</p>
         </button>
       </div>
     </section>
@@ -238,10 +250,105 @@
         </div>
       </div>
     </section>
+    <!-- Get bonus -->
+    <section id="get-bonus" class="mx-6 mt-3.75 hidden">
+      <h2 class="text-lg font-semibold">Get Bonus</h2>
+      <!-- from -->
+      <div class="card bg-base-100 mx-auto w-full max-w-sm shrink-0">
+        <div class="card-body">
+          <fieldset class="fieldset">
+            <label class="label text-neutral/70 text-base/5 font-medium"
+              >Enter Bonus Coupon</label
+            >
+            <input
+              id="coupon-code"
+              type="text"
+              class="input w-full border-none"
+              placeholder="Enter Your Coupon"
+            />
+            <button
+              id="bonus-btn"
+              class="btn btn-primary mt-4 h-fit rounded-full py-2.5 text-xl/6.25 font-semibold"
+            >
+              Get Bonus
+            </button>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+    <!-- Pay Bill -->
+    <section id="pay-bill" class="mx-6 mt-3.75 hidden">
+      <h2 class="text-lg font-semibold">Add Money</h2>
+      <!-- from -->
+      <div class="card bg-base-100 mx-auto w-full max-w-sm shrink-0">
+        <div class="card-body">
+          <fieldset class="fieldset">
+            <label class="label text-neutral/70 text-base/5 font-medium"
+              >Select To Pay</label
+            >
+            <select id="pay-bill-option" class="select select-ghost">
+              <option value="none" disabled selected>
+                Select Payment Option
+              </option>
+              <option value="Electricity Bill">Electricity Bill</option>
+              <option value="Mobile Recharge">Mobile Recharge</option>
+              <option value="Gas Bill">Gas Bill</option>
+            </select>
+
+            <label class="label text-neutral/70 text-base/5 font-medium"
+              >Biller Account Number</label
+            >
+            <input
+              id="pay-account-number"
+              type="text"
+              class="input w-full border-none"
+              placeholder="Enter account number"
+            />
+            <label class="label text-neutral/70 text-base/5 font-medium"
+              >Amount to Pay</label
+            >
+            <input
+              id="pay-bill-amount"
+              type="number"
+              class="input w-full border-none"
+              placeholder="Add Amount to pay"
+            />
+            <label class="label text-neutral/70 text-base/5 font-medium"
+              >Pin Number</label
+            >
+            <input
+              id="pay-bill-pin"
+              type="password"
+              class="input w-full border-none"
+              minlength="4"
+              maxlength="4"
+              placeholder="Enter 4 digit pin number"
+            />
+            <button
+              id="pay-bill-btn"
+              class="btn btn-primary mt-4 h-fit rounded-full py-2.5 text-xl/6.25 font-semibold"
+            >
+              Add Money
+            </button>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+    <!-- Transactions -->
+    <section id="transactions" class="mx-6 mt-3.75 hidden">
+      <div class="flex items-center justify-between">
+        <h2 class="text-lg font-semibold">Transaction History</h2>
+        <p class="text-neutral/50 text-sm">View All</p>
+      </div>
+      <!-- transaction history container -->
+      <div id="transaction-history" class="pt-4"></div>
+    </section>
   </body>
   <script src="./scripts/machine.js"></script>
 
   <script src="./scripts/addMoney.js"></script>
-  <script src="./scripts/transferMoney.js"></script>
+  <script src="./scripts/payBill.js"></script>
   <script src="./scripts/cashout.js"></script>
+  <script src="./scripts/transferMoney.js"></script>
+  <script src="./scripts/getBonus.js"></script>
 </html>

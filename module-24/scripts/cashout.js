@@ -25,4 +25,5 @@ document.getElementById("cashout-btn").addEventListener("click", () => {
   }
   setBalance(balance - amount);
   alert("cashout successful");
+  addToTransaction("Withdraw Money");
 });

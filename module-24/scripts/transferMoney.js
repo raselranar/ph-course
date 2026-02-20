@@ -25,4 +25,5 @@ document.getElementById("transfer-btn").addEventListener("click", () => {
   }
   setBalance(balance - amount);
   alert("Transfer money successful");
+  addToTransaction("Transfer Money");
 });

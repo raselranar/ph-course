@@ -34,4 +34,5 @@ document.getElementById("add-money-btn").addEventListener("click", () => {
     bank: ${bankName}
     Account Number: ${bankAccount}
     `);
+  addToTransaction("Bank Deposit");
 });
