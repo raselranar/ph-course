@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" data-theme="light" class="font-google-sans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <!-- login -->
+    <!-- logo -->
+    <div class="mx-auto">
+      <div class="mt-30">
+        <img class="mx-auto" src="./assets/Logo-full.png" alt="logo" />
+      </div>
+      <!-- from -->
+      <div class="form flex pt-10">
+        <div class="card bg-base-100 mx-auto w-full max-w-sm shrink-0">
+          <div class="card-body">
+            <fieldset class="fieldset">
+              <label class="label text-neutral text-base/5 font-medium"
+                >Mobile Number</label
+              >
+              <input
+                id="input-number"
+                type="text"
+                class="input w-full border-none"
+                minlength="11"
+                maxlength="11"
+                placeholder="Enter your number"
+              />
+              <label class="label text-neutral text-base/5 font-medium"
+                >4 Digit Pin</label
+              >
+              <input
+                id="input-pin"
+                type="password"
+                class="input w-full border-none"
+                minlength="4"
+                maxlength="4"
+                placeholder="Enter 4 Digit Pin"
+              />
+              <button
+                id="login-btn"
+                class="btn btn-primary mt-4 rounded-full text-xl/6.25 font-semibold"
+              >
+                Login
+              </button>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./scripts/login.js"></script>
+</html>
