@@ -52,15 +52,21 @@
       </div>
       <!-- buttons -->
       <div class="grid grid-cols-3 grid-rows-2 gap-4 pt-6">
-        <button class="btn h-full flex-col py-5">
+        <button
+          onclick="showOnly('add-money')"
+          class="btn h-full flex-col py-5"
+        >
           <img src="./assets/opt-1.png" alt="add money" />
           <p class="text-black/60">Add Money</p>
         </button>
-        <button class="btn h-full flex-col py-5">
+        <button onclick="showOnly('cashout')" class="btn h-full flex-col py-5">
           <img src="./assets/opt-2.png" alt="Cashout" />
           <p class="text-black/60">Cashout</p>
         </button>
-        <button class="btn h-full flex-col py-5">
+        <button
+          onclick="showOnly('transfer-money')"
+          class="btn h-full flex-col py-5"
+        >
           <img src="./assets/opt-3.png" alt="Transfer Money" />
           <p class="text-black/60">Transfer Money</p>
         </button>
@@ -78,6 +84,7 @@
         </button>
       </div>
     </section>
+    <!-- Cashout Section -->
     <section id="cashout" class="mx-6 mt-3.75 hidden">
       <h2 class="text-lg font-semibold">Cash Out</h2>
       <!-- from -->
@@ -117,7 +124,7 @@
             />
             <button
               id="cashout-btn"
-              class="btn btn-primary mt-4 rounded-full text-xl/6.25 font-semibold"
+              class="btn btn-primary mt-4 h-fit rounded-full py-2.5 text-xl/6.25 font-semibold"
             >
               Withdraw Money
             </button>
@@ -125,7 +132,8 @@
         </div>
       </div>
     </section>
-    <section id="add-money" class="mx-6 mt-3.75">
+    <!-- Add Money Section -->
+    <section id="add-money" class="mx-6 mt-3.75 hidden">
       <h2 class="text-lg font-semibold">Add Money</h2>
       <!-- from -->
       <div class="card bg-base-100 mx-auto w-full max-w-sm shrink-0">
@@ -159,7 +167,7 @@
               id="add-money-amount"
               type="number"
               class="input w-full border-none"
-              placeholder="Add Amount to withdraw"
+              placeholder="Add Amount to Balance"
             />
             <label class="label text-neutral/70 text-base/5 font-medium"
               >Pin Number</label
@@ -174,9 +182,57 @@
             />
             <button
               id="add-money-btn"
-              class="btn btn-primary mt-4 rounded-full py-3.5 text-xl/6.25 font-semibold"
+              class="btn btn-primary mt-4 h-fit rounded-full py-2.5 text-xl/6.25 font-semibold"
             >
               Add Money
+            </button>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+    <!-- Send money/transfer money section -->
+    <section id="transfer-money" class="mx-6 mt-3.75 hidden">
+      <h2 class="text-lg font-semibold">Transfer Money</h2>
+      <!-- from -->
+      <div class="card bg-base-100 mx-auto w-full max-w-sm shrink-0">
+        <div class="card-body">
+          <fieldset class="fieldset">
+            <label class="label text-neutral/70 text-base/5 font-medium"
+              >User Account Number</label
+            >
+            <input
+              id="transfer-account-number"
+              type="text"
+              class="input w-full border-none"
+              minlength="11"
+              maxlength="11"
+              placeholder="Enter 11 digit number"
+            />
+            <label class="label text-neutral/70 text-base/5 font-medium"
+              >Amount</label
+            >
+            <input
+              id="transfer-amount"
+              type="number"
+              class="input w-full border-none"
+              placeholder="Enter amount to transfer"
+            />
+            <label class="label text-neutral/70 text-base/5 font-medium"
+              >Pin Number</label
+            >
+            <input
+              id="transfer-pin"
+              type="password"
+              class="input w-full border-none"
+              minlength="4"
+              maxlength="4"
+              placeholder="Enter 4 digit pin number"
+            />
+            <button
+              id="transfer-btn"
+              class="btn btn-primary mt-4 h-fit rounded-full py-2.5 text-xl/6.25 font-semibold"
+            >
+              Send Money
             </button>
           </fieldset>
         </div>
@@ -186,5 +242,6 @@
   <script src="./scripts/machine.js"></script>
 
   <script src="./scripts/addMoney.js"></script>
+  <script src="./scripts/transferMoney.js"></script>
   <script src="./scripts/cashout.js"></script>
 </html>

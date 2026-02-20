@@ -23,6 +23,6 @@ document.getElementById("cashout-btn").addEventListener("click", () => {
     alert("invalid pin");
     return;
   }
-  setBalance(Number(balance) - amount);
+  setBalance(balance - amount);
   alert("cashout successful");
 });
