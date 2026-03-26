@@ -5,7 +5,7 @@
     "playerImage": "src/assets/cricketer/Shakib_Al_Hasan.png",
     "countryName": "Bangladesh",
     "rating": 92,
-    "price": 2500000,
+    "price": 2500,
     "playerRole": "All-Rounder",
     "battingStyle": "Left-Hand-Bat"
   },
@@ -15,7 +15,7 @@
     "playerImage": "src/assets/cricketer/Litton_Das.png",
     "countryName": "Bangladesh",
     "rating": 85,
-    "price": 1200000,
+    "price": 1200,
     "playerRole": "Wicket-keeper Batter",
     "battingStyle": "Right-Hand-Bat"
   },
@@ -25,7 +25,7 @@
     "playerImage": "src/assets/cricketer/Mustafizur_Rahman.png",
     "countryName": "Bangladesh",
     "rating": 88,
-    "price": 1800000,
+    "price": 1800,
     "playerRole": "Bowler",
     "battingStyle": "Left-Hand-Bat"
   },
@@ -35,7 +35,7 @@
     "playerImage": "src/assets/cricketer/Najmul_Hossain_Shanto.png",
     "countryName": "Bangladesh",
     "rating": 86,
-    "price": 1400000,
+    "price": 1400,
     "playerRole": "Batter",
     "battingStyle": "Left-Hand-Bat"
   },
@@ -45,7 +45,7 @@
     "playerImage": "src/assets/cricketer/Towhid_Hridoy.png",
     "countryName": "Bangladesh",
     "rating": 84,
-    "price": 1100000,
+    "price": 1100,
     "playerRole": "Batter",
     "battingStyle": "Right-Hand-Bat"
   },
@@ -55,7 +55,7 @@
     "playerImage": "src/assets/cricketer/Taskin_Ahmed.png",
     "countryName": "Bangladesh",
     "rating": 87,
-    "price": 1600000,
+    "price": 1600,
     "playerRole": "Bowler",
     "battingStyle": "Right-Hand-Bat"
   },
@@ -65,7 +65,7 @@
     "playerImage": "src/assets/cricketer/Rishad_Hossain.png",
     "countryName": "Bangladesh",
     "rating": 81,
-    "price": 950000,
+    "price": 950,
     "playerRole": "Bowler",
     "battingStyle": "Right-Hand-Bat"
   },
@@ -75,7 +75,7 @@
     "playerImage": "src/assets/cricketer/Tanzid_Hasan.png",
     "countryName": "Bangladesh",
     "rating": 82,
-    "price": 1000000,
+    "price": 1000,
     "playerRole": "Batter",
     "battingStyle": "Left-Hand-Bat"
   },
@@ -85,7 +85,7 @@
     "playerImage": "src/assets/cricketer/Mehidy_Hasan_Miraz.png",
     "countryName": "Bangladesh",
     "rating": 89,
-    "price": 2000000,
+    "price": 2000,
     "playerRole": "All-Rounder",
     "battingStyle": "Right-Hand-Bat"
   },
@@ -95,7 +95,7 @@
     "playerImage": "src/assets/cricketer/Shoriful_Islam.png",
     "countryName": "Bangladesh",
     "rating": 83,
-    "price": 1250000,
+    "price": 1250,
     "playerRole": "Bowler",
     "battingStyle": "Left-Hand-Bat"
   }

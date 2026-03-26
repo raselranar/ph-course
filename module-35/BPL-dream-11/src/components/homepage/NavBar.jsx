@@ -1,7 +1,7 @@
 import logo from "../../assets/logo.png";
 import DoubleDollar from "../../assets/DoubleDollar.png";
 
-export default function Navbar() {
+export default function Navbar({ coins }) {
   return (
     <div className="navbar bg-base-100 mb-2">
       <div className="flex-1">
@@ -23,7 +23,7 @@ export default function Navbar() {
           </li>
           <li>
             <button className="btn">
-              0 Coins <img src={DoubleDollar} alt="dollar icon" />
+              {coins} Coins <img src={DoubleDollar} alt="dollar icon" />
             </button>
           </li>
         </ul>
