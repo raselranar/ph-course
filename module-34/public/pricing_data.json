@@ -1,0 +1,27 @@
+{
+  "service_name": "CloudSync Pro",
+  "billing_currency": "USD",
+  "pricing_tiers": [
+    {
+      "plan_id": "plan_basic_001",
+      "tier_name": "Basic",
+      "price_monthly": 15.0,
+      "price_yearly": 150.0,
+      "features": ["Up to 5 projects", "10GB storage"]
+    },
+    {
+      "plan_id": "plan_pro_002",
+      "tier_name": "Professional",
+      "price_monthly": 49.0,
+      "price_yearly": 490.0,
+      "features": ["Unlimited projects", "100GB storage"]
+    },
+    {
+      "plan_id": "plan_ent_003",
+      "tier_name": "Enterprise",
+      "price_monthly": null,
+      "price_yearly": null,
+      "features": ["Unlimited storage", "Dedicated support"]
+    }
+  ]
+}
