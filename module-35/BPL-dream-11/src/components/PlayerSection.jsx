@@ -11,7 +11,7 @@ export default function PlayerSection({ setCoins, handleBuyPlayer }) {
   const PlayersData = use(fetchData);
 
   return (
-    <section className="mt-22 ">
+    <section className="mt-22 mb-22 pb-5">
       <div className="flex justify-between mb-8 flex-col sm:flex-row gap-4">
         <h3 className="font-bold text-2xl">
           {isAvailableActive
@@ -36,6 +36,7 @@ export default function PlayerSection({ setCoins, handleBuyPlayer }) {
           PlayersData={PlayersData}
           handleBuyPlayer={handleBuyPlayer}
           setSelectedPlayers={setSelectedPlayers}
+          selectedPlayers={selectedPlayers}
         />
       ) : (
         <SelectedPlayers

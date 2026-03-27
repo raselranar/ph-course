@@ -2,6 +2,9 @@ import { useState } from "react";
 import Banner from "./components/homepage/Banner";
 import Navbar from "./components/homepage/NavBar";
 import PlayerSection from "./components/PlayerSection";
+import { ToastContainer } from "react-toastify";
+import Footer from "./components/Footer";
+import Drawer from "./components/Drawer";
 
 function App() {
   const [coins, setCoins] = useState(5000);
@@ -24,10 +27,11 @@ function App() {
         <Banner></Banner>
       </header>
       <main className="container mx-auto px-4">
-        <PlayerSection
-          setCoins={setCoins}
-          handleBuyPlayer={handleBuyPlayer}></PlayerSection>
+        <PlayerSection setCoins={setCoins} handleBuyPlayer={handleBuyPlayer} />
       </main>
+      <Footer />
+      <Drawer />
+      <ToastContainer />
     </>
   );
 }

@@ -1,14 +1,20 @@
 import logo from "../../assets/logo.png";
 import DoubleDollar from "../../assets/DoubleDollar.png";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Navbar({ coins }) {
   return (
     <div className="navbar bg-base-100 mb-2">
-      <div className="flex-1">
+      <div className="sm:hidden">
+        <label htmlFor="my-drawer-1" className="cursor-pointer">
+          <GiHamburgerMenu />
+        </label>
+      </div>
+      <div className="hidden sm:block">
         <img src={logo} alt="logo" />
       </div>
-      <div className="flex-none">
-        <ul className="menu menu-horizontal px-1 items-center">
+      <div className="flex-none grow flex items-center justify-end">
+        <ul className="menu menu-horizontal px-1 items-center hidden sm:flex">
           <li>
             <a>Home</a>
           </li>
@@ -21,12 +27,10 @@ export default function Navbar({ coins }) {
           <li>
             <a>Schedules</a>
           </li>
-          <li>
-            <button className="btn">
-              {coins} Coins <img src={DoubleDollar} alt="dollar icon" />
-            </button>
-          </li>
         </ul>
+        <button className="btn">
+          {coins} Coins <img src={DoubleDollar} alt="dollar icon" />
+        </button>
       </div>
     </div>
   );
