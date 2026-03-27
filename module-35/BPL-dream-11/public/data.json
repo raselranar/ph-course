@@ -2,7 +2,7 @@
   {
     "id": 1,
     "playerName": "Shakib Al Hasan",
-    "playerImage": "src/assets/cricketer/Shakib_Al_Hasan.png",
+    "playerImage": "https://i.ibb.co.com/N6z6vKyv/Shakib-Al-Hasan.png",
     "countryName": "Bangladesh",
     "rating": 92,
     "price": 2500,
@@ -12,7 +12,7 @@
   {
     "id": 2,
     "playerName": "Litton Das",
-    "playerImage": "src/assets/cricketer/Litton_Das.png",
+    "playerImage": "https://i.ibb.co.com/jPvGnbTH/Litton-Das.png",
     "countryName": "Bangladesh",
     "rating": 85,
     "price": 1200,
@@ -22,7 +22,7 @@
   {
     "id": 3,
     "playerName": "Mustafizur Rahman",
-    "playerImage": "src/assets/cricketer/Mustafizur_Rahman.png",
+    "playerImage": "https://i.ibb.co.com/0pHFVCXF/Mustafizur-Rahman.png",
     "countryName": "Bangladesh",
     "rating": 88,
     "price": 1800,
@@ -32,7 +32,7 @@
   {
     "id": 4,
     "playerName": "Najmul Hossain Shanto",
-    "playerImage": "src/assets/cricketer/Najmul_Hossain_Shanto.png",
+    "playerImage": "https://i.ibb.co.com/FcJ14N3/Najmul-Hossain-Shanto.png",
     "countryName": "Bangladesh",
     "rating": 86,
     "price": 1400,
@@ -42,7 +42,7 @@
   {
     "id": 5,
     "playerName": "Towhid Hridoy",
-    "playerImage": "src/assets/cricketer/Towhid_Hridoy.png",
+    "playerImage": "https://i.ibb.co.com/GfG5Yb4v/Towhid-Hridoy.png",
     "countryName": "Bangladesh",
     "rating": 84,
     "price": 1100,
@@ -52,7 +52,7 @@
   {
     "id": 6,
     "playerName": "Taskin Ahmed",
-    "playerImage": "src/assets/cricketer/Taskin_Ahmed.png",
+    "playerImage": "https://i.ibb.co.com/212KrpQs/Taskin-Ahmed.png",
     "countryName": "Bangladesh",
     "rating": 87,
     "price": 1600,
@@ -62,7 +62,7 @@
   {
     "id": 7,
     "playerName": "Rishad Hossain",
-    "playerImage": "src/assets/cricketer/Rishad_Hossain.png",
+    "playerImage": "https://i.ibb.co.com/8DMzykvd/Rishad-Hossain.png",
     "countryName": "Bangladesh",
     "rating": 81,
     "price": 950,
@@ -72,7 +72,7 @@
   {
     "id": 8,
     "playerName": "Tanzid Hasan",
-    "playerImage": "src/assets/cricketer/Tanzid_Hasan.png",
+    "playerImage": "https://i.ibb.co.com/xtkP8SgX/Tanzid-Hasan.png",
     "countryName": "Bangladesh",
     "rating": 82,
     "price": 1000,
@@ -82,7 +82,7 @@
   {
     "id": 9,
     "playerName": "Mehidy Hasan Miraz",
-    "playerImage": "src/assets/cricketer/Mehidy_Hasan_Miraz.png",
+    "playerImage": "https://i.ibb.co.com/B2rjprXG/Mehidy-Hasan-Miraz.png",
     "countryName": "Bangladesh",
     "rating": 89,
     "price": 2000,
@@ -92,7 +92,7 @@
   {
     "id": 10,
     "playerName": "Shoriful Islam",
-    "playerImage": "src/assets/cricketer/Shoriful_Islam.png",
+    "playerImage": "https://i.ibb.co.com/Zp4n7VPs/Shoriful-Islam.png",
     "countryName": "Bangladesh",
     "rating": 83,
     "price": 1250,
