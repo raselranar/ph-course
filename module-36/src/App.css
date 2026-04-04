@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap");
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* font  */
+html {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.bg-primary-gradient {
+  @apply bg-linear-to-l from-[#5b45ff] to-[#a32bff];
+}
