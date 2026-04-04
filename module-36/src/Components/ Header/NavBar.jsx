@@ -30,19 +30,19 @@ export default function NavBar({ selectProduct }) {
               tabIndex="-1"
               className="menu menu-sm dropdown-content bg-base-100 *:text-base rounded-box z-1 mt-3 w-52 p-2 shadow">
               <li>
-                <a className="font-semibold leading-[120%]">Products</a>
+                <a className="font-semibold leading-[120%]">Solutions</a>
               </li>
               <li>
-                <a className="font-semibold leading-[120%]">Features</a>
+                <a className="font-semibold leading-[120%]">Capabilities</a>
               </li>
               <li>
-                <a className="font-semibold leading-[120%]">Pricing</a>
+                <a className="font-semibold leading-[120%]">Plans</a>
               </li>
               <li>
-                <a className="font-semibold leading-[120%]">Testimonials</a>
+                <a className="font-semibold leading-[120%]">Reviews</a>
               </li>
               <li>
-                <a className="font-semibold leading-[120%]">FAQ</a>
+                <a className="font-semibold leading-[120%]">Help</a>
               </li>
             </ul>
           </div>
@@ -57,19 +57,19 @@ export default function NavBar({ selectProduct }) {
         <div className="navbar-center hidden min-[830px]:flex">
           <ul className="menu menu-horizontal px-1 *:text-base">
             <li>
-              <a className="font-semibold leading-[120%]">Products</a>
+              <a className="font-semibold leading-[120%]">Solutions</a>
             </li>
             <li>
-              <a className="font-semibold leading-[120%]">Features</a>
+              <a className="font-semibold leading-[120%]">Capabilities</a>
             </li>
             <li>
-              <a className="font-semibold leading-[120%]">Pricing</a>
+              <a className="font-semibold leading-[120%]">Plans</a>
             </li>
             <li>
-              <a className="font-semibold leading-[120%]">Testimonials</a>
+              <a className="font-semibold leading-[120%]">Reviews</a>
             </li>
             <li>
-              <a className="font-semibold leading-[120%]">FAQ</a>
+              <a className="font-semibold leading-[120%]">Help</a>
             </li>
           </ul>
         </div>
@@ -85,7 +85,7 @@ export default function NavBar({ selectProduct }) {
             </button>
           </div>
           <a className="flex items-center gap-4">Login</a>
-          <GradientButton text="Get Started" />
+          <GradientButton text="Start Now" />
         </div>
       </div>
     </div>

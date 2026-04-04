@@ -4,10 +4,10 @@ import { toast } from "react-toastify";
 import { use } from "react";
 import { ProductsContext } from "../../../App";
 
-export default function PricingCard({
-  data: { name, description, price, tag, period, icon, tagType, features },
-}) {
+export default function PricingCard({ data }) {
   const [selectProduct, setSelectProduct] = use(ProductsContext);
+  const { name, description, price, tag, period, icon, tagType, features } =
+    data;
 
   const badgeStyles = {
     "best-seller": "text-yellow-700 bg-yellow-100",

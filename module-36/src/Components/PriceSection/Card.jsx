@@ -15,13 +15,15 @@ export default function Card({
 
   return (
     <div
-      className={`card max-w-sm w-full hover:bg-base-200 transition-all duration-200  hover:-translate-y-1  mx-auto bg-base-100 shadow-sm border border-gray-300 ${isPopular ? "bg-primary-gradient text-white" : ""}`}>
+      className={`card max-w-95 w-full hover:bg-base-200 transition-all duration-200  hover:-translate-y-1  mx-auto bg-base-100 shadow-sm border border-gray-300 ${isPopular ? "bg-primary-gradient text-white" : ""}`}>
       <div className="card-body relative">
-        <div className="absolute -top-3 mx-auto left-0 flex justify-center w-full">
-          <div className="badge rounded-full bg-yellow-100 text-yellow-700 ">
-            Most Popular
+        {isPopular && (
+          <div className="absolute -top-3 mx-auto left-0 flex justify-center w-full">
+            <div className="badge rounded-full bg-yellow-100 text-yellow-700 ">
+              Most Popular
+            </div>
           </div>
-        </div>
+        )}
         <div className="flex flex-col space-y-4 flex-1">
           {/* heading part */}
           <div className="">

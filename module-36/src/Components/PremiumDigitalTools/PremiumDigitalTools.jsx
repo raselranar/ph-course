@@ -3,20 +3,16 @@ import ProductsSection from "./ProductsSection/ProductsSection";
 import Loading from "../UI/Loading";
 import CartSection from "./ProductsSection/CartSection/CartSection";
 
-export default function PremiumDigitalTools({
-  setSelectProduct,
-  selectProduct,
-}) {
+export default function PremiumDigitalTools({ selectProduct }) {
   const [activeTab, setActiveTab] = useState("products");
   return (
     <section className="container mx-auto mt-4 sm:mt-8 md:mt-18 px-4">
       <div className="">
         <h2 className="font-extrabold text-3xl  sm:text-4xl md:text-5xl leading-17 text-center">
-          Premium Digital Tools
+          Explore Our Elite Collection
         </h2>
-        <p className="text-gray-500 text-center max-w-md mx-auto">
-          Choose from our curated collection of premium digital products
-          designed to boost your productivity and creativity.
+        <p className="text-gray-500 text-center text-xl font-semibold max-w-md mx-auto">
+          Handpicked resources for modern creators
         </p>
       </div>
       {/* tab buttons */}

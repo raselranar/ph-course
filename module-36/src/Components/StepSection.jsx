@@ -31,7 +31,7 @@ export default function StepSection() {
             Get Started in 3 Steps
           </h2>
           <p className="text-[14px] mt-2 sm:text-lg text-center text-gray-500">
-            Start using premium digital tools in minutes, not hours.
+            Start using Explore Our Elite Collection in minutes, not hours.
           </p>
         </div>
         {/* cards */}

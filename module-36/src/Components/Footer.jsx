@@ -14,8 +14,8 @@ export default function Footer() {
             </div>
 
             <p className="text-zinc-400 text-lg max-w-md">
-              Premium digital tools for creators, professionals, and businesses.
-              Work smarter with our suite of powerful tools.
+              Explore Our Elite Collection for creators, professionals, and
+              businesses. Work smarter with our suite of powerful tools.
             </p>
           </div>
 
