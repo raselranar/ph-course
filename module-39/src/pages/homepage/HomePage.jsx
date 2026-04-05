@@ -1,3 +1,11 @@
+import AllBooks from "./Allbooks/AllBooks";
+import Banner from "./Banner";
+
 export default function HomePage() {
-  return <div className="">homepage</div>;
+  return (
+    <>
+      <Banner />
+      <AllBooks />
+    </>
+  );
 }
