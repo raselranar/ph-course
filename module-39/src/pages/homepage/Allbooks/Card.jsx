@@ -1,8 +1,11 @@
 import { FaRegStar } from "react-icons/fa";
+import { Link } from "react-router";
 
 export default function Card({ book }) {
   return (
-    <div className="card bg-base-100 shadow-sm border border-gray-300 pt-4">
+    <Link
+      to={`/details/${book.bookId}`}
+      className="card bg-base-100 shadow-sm border border-gray-300 pt-4">
       <figure>
         <img
           src={book.image}
@@ -12,8 +15,10 @@ export default function Card({ book }) {
       </figure>
       <div className="card-body">
         <div className="flex gap-2">
-          {book.tags.map((tag) => (
-            <div className="badge badge-secondary">{tag}</div>
+          {book.tags.map((tag, i) => (
+            <div key={i} className="badge badge-secondary">
+              {tag}
+            </div>
           ))}
         </div>
 
@@ -26,6 +31,6 @@ export default function Card({ book }) {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
