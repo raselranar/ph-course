@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" data-theme="light" class="font-google-sans">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="output.css" />
+</head>
+
+<body>
+  <!-- header section -->
+  <header class="border-2 border-black/10 pb-5">
+    <div class="w-10/12 mx-auto">
+
+      <h1 class="text-green-600 text-4xl font-bold">Plant Tracker</h1>
+      <div class="grid grid-cols-3 gap-4 pt-3">
+        <div class="bg-yellow-100 text-yellow-600 py-3 px-5  rounded-xl">
+          <p class="">4</p>
+          <p class="">Total</p>
+        </div>
+        <div class="bg-green-100 text-green-600 py-3 px-5  rounded-xl">
+          <p class="">0</p>
+          <p class="">Thriving</p>
+        </div>
+        <div class="bg-pink-100 text-pink-700 py-3 px-5  rounded-xl">
+          <p class="">0</p>
+          <p class="">Struggling</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="">
+    <section class="w-10/12 mx-auto mt-5">
+      <!-- buttons -->
+      <div class="flex gap-3" id="toggleButton">
+        <button id="allFilter" onclick="toggleButton('allFilter')" class="btn btn-neutral px-6">All</button>
+        <button id="thrivingFilter" onclick="toggleButton('thrivingFilter')" class="btn px-6">Thriving</button>
+        <button id="strugglingFilter" onclick="toggleButton('strugglingFilter')" class="btn px-6">Struggling</button>
+      </div>
+      <!-- cards container -->
+      <div class="mt-7" id="allCard">
+        <!-- card -->
+        
+      </div>
+    </section>
+  </main>
+</body>
+<script src="script.js"></script>
+
+</html>
