@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 5</title>
+    <style>
+      body > * {
+        background-color: #fdec92;
+        border: solid rgb(250 159 48);
+        padding: 10px;
+      }
+      header {
+        grid-area: header;
+      }
+      nav {
+        grid-area: navbar;
+      }
+      nav li {
+        list-style-type: none;
+      }
+
+      main {
+        grid-area: main;
+      }
+      #sidebar {
+        grid-area: sidebar;
+      }
+      #advertising {
+        grid-area: advertising;
+      }
+      footer {
+        grid-area: footer;
+      }
+      body {
+        display: grid;
+        gap: 10px;
+        grid-template-areas:
+          "header header header header"
+          "navbar main main sidebar"
+          "navbar main main advertising"
+          "footer footer footer footer";
+      }
+
+      @media screen and (max-width: 576px) {
+        body {
+          grid-template-areas:
+            "header header header header"
+            "navbar navbar navbar navbar"
+            "sidebar main main main"
+            "advertising footer footer footer";
+        }
+        nav ul {
+          display: flex;
+          justify-content: space-around;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>The Header</header>
+    <nav>
+      <ul>
+        <li>Nav 1</li>
+        <li>Nav 2</li>
+        <li>Nav 3</li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Main Article Area</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eius
+        quae at sapiente non mollitia perspiciatis tempora ducimus,
+        necessitatibus atque?Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Corporis dicta recusandae hic consequuntur perspiciatis laboriosam
+        non similique, quasi libero quo!
+      </p>
+    </main>
+    <aside id="sidebar">Sidebar</aside>
+    <aside id="advertising">Advertising</aside>
+    <footer>The Footer</footer>
+  </body>
+</html>

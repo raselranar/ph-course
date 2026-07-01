@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 4</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4, 200px);
+        grid-template-rows: repeat(3, 150px) 50px 50px;
+        gap: 10px;
+        max-width: 90vw;
+      }
+
+      .big {
+        background-color: gray;
+        grid-row: span 5;
+      }
+      .normal {
+        background-color: rgb(168, 78, 78);
+      }
+      .wide {
+        background-color: gray;
+        grid-column: span 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="big"></div>
+      <div class="normal"></div>
+      <div class="normal"></div>
+      <div class="normal"></div>
+      <div class="normal"></div>
+      <div class="normal"></div>
+      <div class="normal"></div>
+      <div class="normal"></div>
+      <div class="normal"></div>
+      <div class="normal"></div>
+      <div class="wide"></div>
+      <div class="wide"></div>
+    </div>
+  </body>
+</html>
